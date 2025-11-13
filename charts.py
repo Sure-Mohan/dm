@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-data=[23,4556,78,33,45,7,89,90,34]
+data=[23,45,56,78,33,45,67,89,90,34]
+
 plt.hist(data,bins=5,color='skyblue')
 plt.title("Histogram")
 plt.show()
@@ -15,6 +16,6 @@ plt.bar(categories, values,color='orange')
 plt.title('Bar Chart')
 plt.show()
 
-plt.pie(values, labels=categories, autopct='orange')
+plt.pie(values, labels=categories, autopct='%1.1f%%')
 plt.title('Pie Chart')
 plt.show()
